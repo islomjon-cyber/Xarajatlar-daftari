@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xarajatlar daftari</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="all">
+        <nav class="navbar">
+            <h1><img src="Vector.png" alt=""> Xarajatlar daftari</h1>
+            <a href="#">Bosh sahifa</a>
+            <a href="#">Hisobotlar</a>
+            <a href="#">Sozlamalar</a>
+        </nav>
+
+        <div class="text">
+            <h1>Xarajatlar daftari</h1>
+            <p>Kundalik xarajatlaringizni nazorat qiling</p>
+        </div>
+
+        <div class="total">
+            <div class="box1">
+                <div class="icon"><img src="Vector.png" alt=""></div>
+                <div class="info">
+                    <p>Jami xarajatlar</p>
+                    <h3 class="jami-pul">0 so'm</h3>
+                </div>
+            </div>
+
+            <div class="box2">
+                <div class="icon2"><img src="group.png" alt=""></div>
+                <div class="info2">
+                    <p>Xarajatlar soni</p>
+                    <h3 class="lenth">0</h3>
+                </div>
+            </div>
+
+            <div class="box3">
+                <div class="icon3"><img src="increase.png" alt=""></div>
+                <div class="info3">
+                    <p>Eng katta xarajat</p>
+                    <h3 class="max-pul">0 so'm</h3>
+                </div>
+            </div>
+        </div> 
+
+        <div class="main-content">
+            <form class="new my-form">
+                <h2>Yangi xarajat</h2>
+
+                <p>Nomi</p>
+                <input type="text" class="nomi" placeholder="Xarajat nomini kiriting" required>
+
+                <p>Summa (so'm)</p>
+                <input type="number" class="nomi2" placeholder="0" required>
+
+                <p>Kategoriya</p>
+                <select class="nomi3">
+                    <option value="Oziq-ovqat">Oziq-ovqat</option>
+                    <option value="Transport">Transport</option>
+                    <option value="Ta'lim">Ta'lim</option>
+                    <option value="Boshqa">Boshqa</option>
+                </select>
+
+                <button type="submit">+ Xarajat qo'shish</button>
+            </form>
+
+            <div class="new-cost">
+                <h1>Xarajatlar ro'yxati</h1>
+
+                <div class="btn">
+                    <button class="filter" type="button">Barchasi</button>
+                    <button class="filter" type="button">Oziq-ovqat</button>
+                    <button class="filter" type="button">Transport</button>
+                    <button class="filter" type="button">Ta'lim</button>
+                    <button class="filter" type="button">Boshqa</button>
+                </div>
+
+                <div class="list"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
